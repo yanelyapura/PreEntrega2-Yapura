@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+    background-image: url("../img/resumenes-fondo-productos-cosmeticos_173387-1737.avif");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.left-container {
+    text-align: left;
+}
+
+.right-container {
+    text-align: right;
+}
+
+.logo {
+    height: 100;
+    width: 300;
+    max-width: 100%;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.container-izq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+
+.secciones-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.seccion-izq,
+.productos-destacados {
+    flex-basis: 50%;
+}
+
+.productos-destacados .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.grid-container-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    color: blueviolet;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 300px;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+
+h1.page-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p.description {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+#map-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #524bd9;
+}
+
+
+.logo {
+    background-color: #6c63ff;
+}
+
+.menu button {
+    background-color: #6c63ff;
+}
+
+.seccion-titulo {
+    color: #6c63ff;
+}
+
+.menu button {
+    border: none;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menu button:hover {
+    color: #a5668b;
+}
