@@ -1,317 +1,170 @@
+/* Estilos generales */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F0F0F0;
-    background-image: url("../img/resumenes-fondo-productos-cosmeticos_173387-1737.avif");
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-
-.left-container {
-    text-align: left;
-}
-
-.right-container {
-    text-align: right;
-}
-
-.logo {
-    height: 100;
-    width: 300;
-    max-width: 100%;
-}
-
-.productos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    justify-items: center;
-    margin-bottom: 40px;
-}
-
-.container-izq {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
+  padding: 20px;
 }
 
 .seccion-titulo {
-    text-align: center;
-    margin: 40px 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+/* Estilos del header */
+header {
+  background-color: #e66db7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.upper-container {
+  width: 100%;
+}
 
+.logo {
+  width: 97vw;
+  height: auto;
+}
+
+.lower-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+/* Estilos del main */
 .secciones-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  margin-top: 40px;
 }
 
-.seccion-izq,
-.productos-destacados {
-    flex-basis: 50%;
+.por-que-elegirnos h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffb5e8;
 }
 
-.productos-destacados .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.menu-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo-container img {
-    width: 100px;
-    height: auto;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.menu button a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.menu ul li {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    justify-content: center;
-}
-
-.grid-container-productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    justify-content: center;
-}
-
-.grid-item img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-h2 {
-    text-align: center;
-    margin: 40px 0;
-    color: blueviolet;
-}
-
-.productos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.video {
+  margin-top: 30px;
 }
 
 .producto {
-    width: 300px;
-    background-color: #FFF;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .producto img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: transform 0.3s ease;
 }
 
-.descripcion {
-    font-size: 14px;
-    margin-bottom: 10px;
+.producto img:hover {
+  transform: scale(1.1);
+}
+
+.nombre {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ff7f50;
 }
 
 .precio {
-    font-weight: bold;
-    color: blueviolet;
+  font-size: 16px;
+  color: #333333;
 }
 
-.newsletter-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
+/* Estilos del footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
 }
 
-.newsletter-form input[type="email"] {
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+.newsletter-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .newsletter-form button {
-    padding: 10px 20px;
-    background-color: blueviolet;
-    color: #FFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-footer {
-    background-color: bisque;
-    padding: 20px;
-    text-align: center;
-    color: #FFF;
+.newsletter-form button:hover {
+  background-color: #555;
 }
-
-
-h1.page-title {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-p.description {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-
-#map-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
 
 .formulario-contacto {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 40px;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.formulario-contacto form {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+.formulario-contacto .form-group {
+  margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-    width: 96%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.formulario-contacto label {
+  display: block;
+  font-weight: bold;
+  color: #333;
 }
 
-textarea {
-    resize: vertical;
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-button[type="submit"] {
-    background-color: #6c63ff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #524bd9;
-}
-
-
-.logo {
-    background-color: #6c63ff;
-}
-
-.menu button {
-    background-color: #6c63ff;
-}
-
-.seccion-titulo {
-    color: #6c63ff;
-}
-
-.menu button {
-    border: none;
-    background: none;
-    padding: 10px;
-    cursor: pointer;
-    color: #333;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.menu button:hover {
-    color: #a5668b;
+.formulario-contacto .submit-button {
+  background-color: #e66db7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
